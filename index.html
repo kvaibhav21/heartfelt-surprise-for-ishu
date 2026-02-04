@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हमारी पहली वेलेंटाइन डे</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        const correctPassword = "OurFirstLove2024"; // Change this to the client's chosen password
+        let enteredPassword = prompt("विशेष पासवर्ड दर्ज करें:");
+        if (enteredPassword !== correctPassword) {
+            alert("गलत पासवर्ड। प्रवेश निषेधित।");
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+    <div class="hero">
+        <img src="assets/images/couple.jpg" alt="हम साथ में" class="hero-img">
+        <h1>हमारी पहली वेलेंटाइन डे पर, तुम्हारे लिए एक छोटा सा उपहार</h1>
+        <p>यह हमारी कहानी है, सिर्फ तुम्हारे लिए।</p>
+    </div>
+    <div class="nav">
+        <button onclick="showTab('happy')">हमारी खुशियों की कहानी</button>
+        <button onclick="showTab('sad')">जब तुम चली गईं</button>
+        <button onclick="showTab('beyond')">तुम इसके आगे सोचो</button>
+    </div>
+    <div id="happy-tab" class="tab-content" style="display:none;">
+        <h2>हमारी खुशियों की कहानी</h2>
+        <div class="slideshow">
+            <img src="assets/images/happy1.jpg" alt="पहली मुलाकात">
+            <p>[Insert client's happy story in Hindi here, e.g., हमारी पहली मुलाकात जब हुई थी...]</p>
+            <!-- Add more images and text as needed for a slideshow -->
+        </div>
+    </div>
+    <div id="sad-tab" class="tab-content" style="display:none;">
+        <h2>जब तुम चली गईं</h2>
+        <button onclick="showSubStory('sad1')">पहली बार जब तुम चली गईं</button>
+        <button onclick="showSubStory('sad2')">दूसरी बार जब तुम चली गईं</button>
+        <button onclick="showSubStory('sad3')">तीसरी बार जब तुम चली गईं</button>
+        <div id="sad1" class="sub-story" style="display:none;">
+            <img src="assets/images/sad1.jpg" alt="दुखद पल">
+            <p>[Client's first sad story in Hindi, e.g., जब तुम पीरियड के दौरान चली गईं, मैं अकेला महसूस करता था...]</p>
+        </div>
+        <div id="sad2" class="sub-story" style="display:none;">
+            <img src="assets/images/sad2.jpg" alt="दुखद पल">
+            <p>[Client's second sad story in Hindi]</p>
+        </div>
+        <div id="sad3" class="sub-story" style="display:none;">
+            <img src="assets/images/sad3.jpg" alt="दुखद पल">
+            <p>[Client's third sad story in Hindi]</p>
+        </div>
+    </div>
+    <div id="beyond-tab" class="tab-content" style="display:none;">
+        <h2>तुम इसके आगे सोचो</h2>
+        <p>[Add creative future ideas in Hindi, e.g., हमारे भविष्य के सपने: एक साथ घूमना...]</p>
+        <!-- Optional: Add a Google Maps embed or quiz here -->
+    </div>
+    <footer>
+        <p>सच्ची प्यार से, [Client's Name]</p>
+        <audio controls>
+            <source src="assets/audio/romantic-song.mp3" type="audio/mpeg">
+        </audio>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
