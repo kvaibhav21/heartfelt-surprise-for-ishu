@@ -1,0 +1,45 @@
+body {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    background: linear-gradient(to bottom, #ffcccc, #ff9999);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.hero {
+    padding: 50px;
+}
+.hero-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.nav button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.nav button:hover {
+    background: #cc0000;
+}
+.tab-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.sub-story {
+    margin-top: 20px;
+}
+footer {
+    padding: 20px;
+    background: #ff6666;
+}
+@media (max-width: 600px) {
+    .hero { padding: 20px; }
+    .nav button { display: block; width: 80%; margin: 10px auto; }
+}
